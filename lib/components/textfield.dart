@@ -21,7 +21,7 @@ class MyTextFields extends StatelessWidget {
       child: ClipRRect(
         // borderRadius: BorderRadius.circular(20.0),
         child: TextField(
-          style: const TextStyle(color: Color.fromARGB(255, 47, 41, 107), fontSize: 20.0),
+          style: const TextStyle(fontSize: 20.0),
           controller: controller,
           decoration: InputDecoration(
             suffixIcon: icon,
@@ -36,6 +36,7 @@ class MyTextFields extends StatelessWidget {
             // fillColor: const Color.fromARGB(255, 220, 217, 226),
             // filled: true,
             hintText: hintText,
+            hintStyle: TextStyle(color: Theme.of(context).primaryColor),
           ),
           obscureText: obscureText,
         )
